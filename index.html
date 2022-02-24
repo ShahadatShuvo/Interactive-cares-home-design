@@ -20,6 +20,9 @@
     <!-- CSS
 	============================================ -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="assets/css/plugins/icofont.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/flaticon.css" />
@@ -52,7 +55,10 @@
             <div class="header-top-wrapper">
               <!-- Header Top Left Start -->
               <div class="header-top-left">
-                <p><b>নতুন বছর উপলক্ষে ৮০% </b> <a href="#"><big >অতিরিক্ত ছাড় !</big></a></p>
+                <p>
+                  <b>নতুন বছর উপলক্ষে ৮০% </b>
+                  <a href="#"><big>অতিরিক্ত ছাড় !</big></a>
+                </p>
               </div>
               <!-- Header Top Left End -->
 
@@ -388,6 +394,12 @@
               href="#"
               >Start A Course</a
             >
+            <a
+              class="btn btn-primary btn-hover-dark popup-youtube"
+              style="background-color: #0e6b77"
+              href="https://www.youtube.com/watch?v=zB6JLN06Ix4"
+              >Watch</a
+            >
           </div>
           <!-- Slider Content End -->
         </div>
@@ -439,7 +451,7 @@
             <img
               src="./assets/vector/logo.svg"
               alt="Slider"
-              style="width: 70%" 
+              style="width: 70%"
             />
           </div>
         </div>
@@ -3897,5 +3909,12 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-youtube").magnificPopup({
+          type: "iframe",
+        });
+      });
+    </script>
   </body>
 </html>
